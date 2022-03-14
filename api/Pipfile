@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-cors = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+cloudinary = "*"
+flask-jwt-extended = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+init = "flask db init"
+migrate = "flask db migrate"
+upgrade = "flask db upgrade"
+start = "python src/app.py"
